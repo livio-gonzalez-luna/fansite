@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <title>ash｜MARIO - only HTML & CSS -</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="fansite.css" />
+
+    <meta property="og:url" content="https://ash-creator.com/hentai_css/mario/" />
+    <meta property="og:title" content="ash｜MARIO - only HTML & CSS -" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="13,000行のHTMLとCSSのみで実装された「操作して遊べる」マリオ" />
+    <meta property="og:image" content="https://ash-creator.com/hentai_css/mario/og_img.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ash-creator" />
+    <meta property="og:site_name" content="ash - creative -" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- webfont -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+</head>
+<body id="MARIO">
+    <!-- switch -->
+    <input type="radio" name="select" id="top" checked>
+    <input type="radio" name="select" id="btm">
+    <input type="radio" name="select-crd" id="top-crd" checked>
+    <input type="radio" name="select-crd" id="btm-crd">
+    <input type="checkbox" id="intro">
+    <input type="checkbox" id="credit">
+    <input type="checkbox" id="STR">
+    <input type="checkbox" id="BGM">
+    <input type="radio" name="Jump-Button" id="JPA">
+    <input type="radio" name="Jump-Button" id="JPB">
+    <input type="checkbox" name="A-Button--od" id="A01">
+    <input type="checkbox" name="A-Button--ev" id="A02">
+    <input type="checkbox" name="A-Button--od" id="A03">
+    <input type="checkbox" name="A-Button--ev" id="A04">
+    <input type="checkbox" name="A-Button--od" id="A05">
+    <input type="checkbox" name="A-Button--ev" id="A06">
+    <input type="checkbox" name="A-Button--od" id="A07">
+    <input type="checkbox" name="A-Button--ev" id="A08">
+    <input type="checkbox" name="A-Button--od" id="A09">
+    <input type="checkbox" name="A-Button--ev" id="A10">
+    <input type="checkbox" name="A-Button--od" id="A11">
+    <input type="checkbox" name="A-Button--ev" id="A12">
+    <input type="checkbox" name="A-Button--od" id="A13">
+    <input type="checkbox" name="A-Button--ev" id="A14">
+    <input type="checkbox" name="A-Button--od" id="A15">
+    <input type="checkbox" name="A-Button--ev" id="A16">
+    <input type="checkbox" name="A-Button--od" id="J01">
+    <input type="checkbox" name="A-Button--ev" id="J02">
+    <input type="checkbox" name="A-Button--od" id="J03">
+    <input type="checkbox" name="A-Button--ev" id="J04">
+    <input type="checkbox" name="A-Button--od" id="J05">
+    <input type="checkbox" name="A-Button--ev" id="J06">
+    <input type="checkbox" name="A-Button--od" id="J07">
+    <input type="checkbox" name="A-Button--ev" id="J08">
+    <input type="checkbox" name="A-Button--od" id="J09">
+    <input type="checkbox" name="A-Button--ev" id="J10">
+    <input type="checkbox" name="A-Button--od" id="J11">
+    <input type="checkbox" name="A-Button--ev" id="J12">
+    <input type="checkbox" name="A-Button--od" id="J13">
+    <input type="checkbox" name="A-Button--ev" id="J14">
+    <input type="checkbox" name="A-Button--od" id="J15">
+    <input type="checkbox" name="A-Button--ev" id="J16">
+    <input type="checkbox" name="A-Button--BGMod" id="BGA05">
+    <input type="checkbox" name="A-Button--BGMev" id="BGA06">
+    <input type="checkbox" name="A-Button--BGMod" id="BGA07">
+    <input type="checkbox" name="A-Button--BGMev" id="BGA08">
+    <input type="checkbox" name="A-Button--BGMod" id="BGA09">
+    <input type="checkbox" name="A-Button--BGMev" id="BGA10">
+    <input type="checkbox" name="A-Button--BGMod" id="BGA11">
+    <input type="checkbox" name="A-Button--BGMev" id="BGA12">
+    <input type="checkbox" name="A-Button--BGMod" id="BGA13">
+    <input type="checkbox" name="A-Button--BGMev" id="BGA14">
+    <input type="checkbox" name="A-Button--BGMod" id="BGA15">
+    <input type="checkbox" name="A-Button--BGMev" id="BGA16">
+    <input type="checkbox" name="A-Button--BGMod" id="BGJ05">
+    <input type="checkbox" name="A-Button--BGMev" id="BGJ06">
+    <input type="checkbox" name="A-Button--BGMod" id="BGJ07">
+    <input type="checkbox" name="A-Button--BGMev" id="BGJ08">
+    <input type="checkbox" name="A-Button--BGMod" id="BGJ09">
+    <input type="checkbox" name="A-Button--BGMev" id="BGJ10">
+    <input type="checkbox" name="A-Button--BGMod" id="BGJ11">
+    <input type="checkbox" name="A-Button--BGMev" id="BGJ12">
+    <input type="checkbox" name="A-Button--BGMod" id="BGJ13">
+    <input type="checkbox" name="A-Button--BGMev" id="BGJ14">
+    <input type="checkbox" name="A-Button--BGMod" id="BGJ15">
+    <input type="checkbox" name="A-Button--BGMev" id="BGJ16">
+
+    <!-- container -->
+    <div class="container">
+        <h1>Let's Play !!!</h1>
+        <div class="gameBody">
+            <!-- controller -->
+            <div class="gameController">
+                <!-- controller__left -->
+                <div class="controller--left">
+                    <!-- SELECT-Button -->
+                    <div class="SELECT-Button">
+                        <div class="SELECT-Button__inner"></div>
+                        <label class="SELECT-Button__select select--up" for="top"></label>
+                        <label class="SELECT-Button__select select--under" for="btm"></label>
+                        <label class="SELECT-Button__select select--up-crd" for="top-crd"></label>
+                        <label class="SELECT-Button__select select--under-crd" for="btm-crd"></label>
+                        <label class="SELECT-Button__select select--right" for="STR"></label>
+                        <div class="startguide"></div>
+                    </div>
+                </div>
+                <!-- controller__right -->
+                <div class="controller--right">
+                    <div class="controller__warpper">
+                        <!-- B-Button -->
+                        <div class="B-Button">
+                            <div class="button_dsgn">
+                                <div class="button_dsgnInner"></div>
+                            </div>
+                            <label class="B-Button__switch action--B01" for=""></label>
+                        </div>
+                        <!-- A-Button -->
+                        <div class="A-Button">
+                            <div class="btncover"></div>
+                            <div class="button_dsgn">
+                                <div class="button_dsgnInner"></div>
+                            </div>
+                            <div class="A-Button__wrapper A-button--SET">
+                                <label class="A-Button__switch action--INT" for="intro">INT</label>
+                                <label class="A-Button__switch action--CRD" for="credit">CRD</label>
+                                <a href="https://ash-creator.com/hentai_css/mario/" class="A-Button__switch action--BCK">BCK</a>
+                                <a href="https://ash-creator.com/" class="A-Button__switch action--WEB" target="_blank">WEB</a>
+                            </div>
+                            <div class="A-Button__wrapper A-button--MRO">
+                                <a href="https://ash-creator.com/hentai_css/mario/" class="A-Button__switch action--CONTN">BCK</a>
+                                <div class="A-Button__wrapper A-button--JMP">
+                                    <label class="A-Button__switch action--JPB" for="JPB">JPB</label>
+                                    <label class="A-Button__switch action--JPA" for="JPA">JPA</label>
+                                </div>      
+                                <label class="A-Button__switch crs_delay action--A01" for="A01">A01</label>
+                                <label class="A-Button__switch crs_delay action--A02" for="A02">A02</label>
+                                <label class="A-Button__switch crs_delay action--A03" for="A03">A03</label>
+                                <label class="A-Button__switch crs_delay action--A04" for="A04">A04</label>
+                                <label class="A-Button__switch crs_delay action--BGM" for="BGM">BGM</label>
+                                <label class="A-Button__switch crs_delay action--A05" for="A05">A05</label>
+                                <label class="A-Button__switch crs_delay action--A06" for="A06">A06</label>
+                                <label class="A-Button__switch crs_delay action--A07" for="A07">A07</label>
+                                <label class="A-Button__switch crs_delay action--A08" for="A08">A08</label>
+                                <label class="A-Button__switch crs_delay action--A09" for="A09">A09</label>
+                                <label class="A-Button__switch crs_delay action--A10" for="A10">A10</label>
+                                <label class="A-Button__switch crs_delay action--A11" for="A11">A11</label>
+                                <label class="A-Button__switch crs_delay action--A12" for="A12">A12</label>
+                                <label class="A-Button__switch crs_delay action--A13" for="A13">A13</label>
+                                <label class="A-Button__switch crs_delay action--A14" for="A14">A14</label>
+                                <label class="A-Button__switch crs_delay action--A15" for="A15">A15</label>
+                                <label class="A-Button__switch crs_delay action--A16" for="A16">A16</label>
+                                <label class="A-Button__switch crs_jump action--J01" for="J01">J01</label>
+                                <label class="A-Button__switch crs_jump action--J02" for="J02">J02</label>
+                                <label class="A-Button__switch crs_jump action--J03" for="J03">J03</label>
+                                <label class="A-Button__switch crs_jump action--J04" for="J04">J04</label>
+                                <label class="A-Button__switch crs_jump action--J05" for="J05">J05</label>
+                                <label class="A-Button__switch crs_jump action--J06" for="J06">J06</label>
+                                <label class="A-Button__switch crs_jump action--J07" for="J07">J07</label>
+                                <label class="A-Button__switch crs_jump action--J08" for="J08">J08</label>
+                                <label class="A-Button__switch crs_jump action--J09" for="J09">J09</label>
+                                <label class="A-Button__switch crs_jump action--J10" for="J10">J10</label>
+                                <label class="A-Button__switch crs_jump action--J11" for="J11">J11</label>
+                                <label class="A-Button__switch crs_jump action--J12" for="J12">J12</label>
+                                <label class="A-Button__switch crs_jump action--J13" for="J13">J13</label>
+                                <label class="A-Button__switch crs_jump action--J14" for="J14">J14</label>
+                                <label class="A-Button__switch crs_jump action--J15" for="J15">J15</label>
+                                <label class="A-Button__switch crs_jump action--J16" for="J16">J16</label>
+                                <div class="A-MR"></div>
+                            </div>
+                            <div class="A-Button__wrapper A-button--BGM A-MR">
+                                <div class="A-Button__wrapper A-button--JMP">
+                                    <label class="A-Button__switch action--JPB" for="JPB">JPB</label>
+                                    <label class="A-Button__switch action--JPA" for="JPA">JPA</label>
+                                </div>                 
+                                <label class="A-Button__switch crs_delay action--A01" for="BGA01">A01</label>
+                                <label class="A-Button__switch crs_delay action--A02" for="BGA02">A02</label>
+                                <label class="A-Button__switch crs_delay action--A03" for="BGA03">A03</label>
+                                <label class="A-Button__switch crs_delay action--A04" for="BGA04">A04</label>
+                                <label class="A-Button__switch crs_delay action--A05" for="BGA05">A05</label>
+                                <label class="A-Button__switch crs_delay action--A06" for="BGA06">A06</label>
+                                <label class="A-Button__switch crs_delay action--A07" for="BGA07">A07</label>
+                                <label class="A-Button__switch crs_delay action--A08" for="BGA08">A08</label>
+                                <label class="A-Button__switch crs_delay action--A09" for="BGA09">A09</label>
+                                <label class="A-Button__switch crs_delay action--A10" for="BGA10">A10</label>
+                                <label class="A-Button__switch crs_delay action--A11" for="BGA11">A11</label>
+                                <label class="A-Button__switch crs_delay action--A12" for="BGA12">A12</label>
+                                <label class="A-Button__switch crs_delay action--A13" for="BGA13">A13</label>
+                                <label class="A-Button__switch crs_delay action--A14" for="BGA14">A14</label>
+                                <label class="A-Button__switch crs_delay action--A15" for="BGA15">A15</label>
+                                <label class="A-Button__switch crs_delay action--A16" for="BGA16">A16</label>
+                                <label class="A-Button__switch crs_jump action--J01" for="BGJ01">J01</label>
+                                <label class="A-Button__switch crs_jump action--J02" for="BGJ02">J02</label>
+                                <label class="A-Button__switch crs_jump action--J03" for="BGJ03">J03</label>
+                                <label class="A-Button__switch crs_jump action--J04" for="BGJ04">J04</label>
+                                <label class="A-Button__switch crs_jump action--J05" for="BGJ05">J05</label>
+                                <label class="A-Button__switch crs_jump action--J06" for="BGJ06">J06</label>
+                                <label class="A-Button__switch crs_jump action--J07" for="BGJ07">J07</label>
+                                <label class="A-Button__switch crs_jump action--J08" for="BGJ08">J08</label>
+                                <label class="A-Button__switch crs_jump action--J09" for="BGJ09">J09</label>
+                                <label class="A-Button__switch crs_jump action--J10" for="BGJ10">J10</label>
+                                <label class="A-Button__switch crs_jump action--J11" for="BGJ11">J11</label>
+                                <label class="A-Button__switch crs_jump action--J12" for="BGJ12">J12</label>
+                                <label class="A-Button__switch crs_jump action--J13" for="BGJ13">J13</label>
+                                <label class="A-Button__switch crs_jump action--J14" for="BGJ14">J14</label>
+                                <label class="A-Button__switch crs_jump action--J15" for="BGJ15">J15</label>
+                                <label class="A-Button__switch crs_jump action--J16" for="BGJ16">J16</label>
+                                <div class="A-MR"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- display -->
+            <div class="gameDisplay">
+                <!-- gameDisplay__wrapper -->
+                <div class="gameDisplay__wrapper"></div>
+                <!-- display__ScoreBox -->
+                <div class="scoreBox font">
+                    <div class="scoreBox__wrapper">
+                        <span class="scoreBox__text">MARIO</span>
+                        <div class="scoreBox__text">
+                            <span class="scoreBox__count">0</span>
+                            <div class="scoreBox__countBox">
+                                <div class="count_wrap">
+                                    <div class="scoreBox__count count_del_01"></div>
+                                    <div class="scoreBox__count count_del_02"></div>
+                                    <div class="scoreBox__count count_del_03"></div>
+                                    <div class="scoreBox__count count_del_04"></div>
+                                    <div class="scoreBox__count count_del_05"></div>
+                                    <div class="scoreBox__count count_del_06"></div>
+                                    <div class="scoreBox__count count_del_07"></div>
+                                    <div class="scoreBox__count count_del_08"></div>
+                                    <div class="scoreBox__count count_del_09"></div>
+                                    <div class="scoreBox__count count_del_10"></div>
+                                    <div class="scoreBox__count count_del_11"></div>
+                                    <div class="scoreBox__count count_del_12"></div>
+                                    <div class="scoreBox__count count_del_13"></div>
+                                    <div class="scoreBox__count count_del_14"></div>
+                                    <div class="scoreBox__count count_del_15"></div>
+                                    <div class="scoreBox__count count_del_16"></div>
+                                    <div class="scoreBox__count count_00">0</div>
+                                    <div class="scoreBox__count count_01">0</div>
+                                    <div class="scoreBox__count count_02">0</div>
+                                    <div class="scoreBox__count count_03">0</div>
+                                    <div class="scoreBox__count count_04">0</div>
+                                    <div class="scoreBox__count count_05">0</div>
+                                    <div class="scoreBox__count count_06">0</div>
+                                    <div class="scoreBox__count count_07">0</div>
+                                    <div class="scoreBox__count count_08">0</div>
+                                    <div class="scoreBox__count count_09">0</div>
+                                    <div class="scoreBox__count count_10">1</div>
+                                    <div class="scoreBox__count count_11">1</div>
+                                    <div class="scoreBox__count count_12">1</div>
+                                    <div class="scoreBox__count count_13">1</div>
+                                    <div class="scoreBox__count count_14">1</div>
+                                    <div class="scoreBox__count count_15">1</div>
+                                    <div class="scoreBox__count count_16">1</div>
+                                </div>
+                            </div>
+                            <div class="scoreBox__countBox">
+                                <div class="count_wrap">
+                                    <div class="scoreBox__count count_del_01"></div>
+                                    <div class="scoreBox__count count_del_02"></div>
+                                    <div class="scoreBox__count count_del_03"></div>
+                                    <div class="scoreBox__count count_del_04"></div>
+                                    <div class="scoreBox__count count_del_05"></div>
+                                    <div class="scoreBox__count count_del_06"></div>
+                                    <div class="scoreBox__count count_del_07"></div>
+                                    <div class="scoreBox__count count_del_08"></div>
+                                    <div class="scoreBox__count count_del_09"></div>
+                                    <div class="scoreBox__count count_del_10"></div>
+                                    <div class="scoreBox__count count_del_11"></div>
+                                    <div class="scoreBox__count count_del_12"></div>
+                                    <div class="scoreBox__count count_del_13"></div>
+                                    <div class="scoreBox__count count_del_14"></div>
+                                    <div class="scoreBox__count count_del_15"></div>
+                                    <div class="scoreBox__count count_del_16"></div>
+                                    <div class="scoreBox__count count_00">0</div>
+                                    <div class="scoreBox__count count_01">1</div>
+                                    <div class="scoreBox__count count_02">2</div>
+                                    <div class="scoreBox__count count_03">3</div>
+                                    <div class="scoreBox__count count_04">4</div>
+                                    <div class="scoreBox__count count_05">5</div>
+                                    <div class="scoreBox__count count_06">6</div>
+                                    <div class="scoreBox__count count_07">7</div>
+                                    <div class="scoreBox__count count_08">8</div>
+                                    <div class="scoreBox__count count_09">9</div>
+                                    <div class="scoreBox__count count_10">0</div>
+                                    <div class="scoreBox__count count_11">1</div>
+                                    <div class="scoreBox__count count_12">2</div>
+                                    <div class="scoreBox__count count_13">3</div>
+                                    <div class="scoreBox__count count_14">4</div>
+                                    <div class="scoreBox__count count_15">5</div>
+                                    <div class="scoreBox__count count_16">6</div>
+                                </div>
+                            </div>
+                            <span class="scoreBox__count">0</span>
+                            <span class="scoreBox__count">0</span>
+                        </div>
+                    </div>
+                    <div class="scoreBox__wrapper">
+                        <span class="scoreBox__text">WORLD</span>
+                        <span class="scoreBox__text">1-1</span>
+                    </div>
+                    <div class="scoreBox__wrapper">
+                        <span class="scoreBox__text">TIME</span>
+                        <div class="scoreBox__text">
+                            <span class="scoreBox__count">0</span>
+                            <div class="scoreBox__countBox">
+                                <div class="count_wrap--timeA">
+                                    <div class="scoreBox__count">0</div>
+                                    <div class="scoreBox__count">1</div>
+                                    <div class="scoreBox__count">2</div>
+                                    <div class="scoreBox__count">3</div>
+                                    <div class="scoreBox__count">4</div>
+                                    <div class="scoreBox__count">5</div>
+                                    <div class="scoreBox__count">6</div>
+                                    <div class="scoreBox__count">7</div>
+                                    <div class="scoreBox__count">8</div>
+                                    <div class="scoreBox__count">9</div>
+                                </div>
+                            </div>
+                            <div class="scoreBox__countBox">
+                                <div class="count_wrap--timeB">
+                                    <div class="scoreBox__count">0</div>
+                                    <div class="scoreBox__count">1</div>
+                                    <div class="scoreBox__count">2</div>
+                                    <div class="scoreBox__count">3</div>
+                                    <div class="scoreBox__count">4</div>
+                                    <div class="scoreBox__count">5</div>
+                                    <div class="scoreBox__count">6</div>
+                                    <div class="scoreBox__count">7</div>
+                                    <div class="scoreBox__count">8</div>
+                                    <div class="scoreBox__count">9</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- display__start -->
+                <div class="display--start">                
+                    <div class="start__title">
+                        <div class="title_mtr title_mtr--1"></div>
+                        <div class="title_mtr title_mtr--2"></div>
+                        <div class="title_mtr title_mtr--3"></div>
+                        <div class="title_mtr title_mtr--4"></div>
+                        <div class="subtitle__wrappper">
+                            <div class="subtitle__textBox subtext-H">
+                                <div class="P01"></div><div class="P02"></div>
+                            </div>
+                            <div class="subtitle__textBox subtext-T">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                            </div>
+                            <div class="subtitle__textBox subtext-M">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="subtitle__textBox subtext-L">
+                                <div class="P01"></div><div class="P02"></div>
+                            </div>
+                            <div class="subtitle__textBox subtext-and">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="subtitle__textBox subtext-C">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div>
+                            </div>
+                            <div class="subtitle__textBox subtext-S">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="subtitle__textBox subtext-S">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                        </div>
+                        <div class="title__wrappper">
+                            <div class="title__textBox text-M">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="title__textBox text-A">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div>
+                            </div>
+                            <div class="title__textBox text-R">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="title__textBox text-I">
+                                <div class="P01"></div>
+                            </div>
+                            <div class="title__textBox text-O">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div>
+                            </div>
+                            <div class="title__textBox text-B">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div>
+                            </div>
+                            <div class="title__textBox text-R">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="title__textBox text-O">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div>
+                            </div>
+                            <div class="title__textBox text-S">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="title__dot"></div>
+                        </div>
+                    </div>
+                    <div class="selectbox">
+                        <div class="select__icon">
+                            <div class="select__iconInner"></div>
+                        </div>
+                        <p class="selectbox__text font selectbox__text--play">GAME START</p>
+                        <p class="selectbox__text font selectbox__text--cred">CREDIT</p>
+                    </div>
+                </div>
+                <!-- display__credit -->
+                <div class="display--credit">
+                    <span class="credit_text font">Web creator ash</span>
+                    <div class="credit__wrapper">
+                        <div class="select__icon">
+                            <div class="select__iconInner"></div>
+                        </div>
+                        <div class="credit_link font">Go to website</div>
+                        <div class="credit_back font">Back</div>
+                    </div>
+                </div>
+                <!-- display__intro -->
+                <div class="display--intro">
+                    <span class="intro__text--title font">WORLD　1-1</span>
+                    <span class="intro__text--count font">X  1</span>
+                    <div class="MRO stMRIO">
+                        <div class="MRO_fce">
+                            <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                            <div class="P04"></div><div class="P05"></div>
+                        </div>
+                        <div class="MRO_bdy">
+                            <div class="MRO_bdy-set">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- display__end -->
+                <div class="display--end">
+                    <div class="end__messagebox">
+                        <span class="end__messagebox__text endText-GO font">GAME OVER</span>
+                        <span class="end__messagebox__text endText-CR font">GAME CLEAR</span>
+                    </div>
+                    <div class="end__wrapper">
+                        <div class="select__icon">
+                            <div class="select__iconInner"></div>
+                        </div>
+                        <div class="credit_link font">Restart</div>
+                    </div>
+                </div>
+                <!-- display__stage -->
+                <div class="display--stage">
+                    <!-- background -->
+                    <div class="stage__bg"></div>
+                    <!-- stage__view -->
+                    <div class="stage__view">
+                        <div class="view_content mount">
+                            <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div><div class="P17"></div><div class="P18"></div><div class="P19"></div><div class="P20"></div><div class="P21"></div><div class="P22"></div><div class="P23"></div><div class="P24"></div><div class="P25"></div><div class="P26"></div><div class="P27"></div><div class="P28"></div><div class="P29"></div><div class="P30"></div><div class="P31"></div><div class="P32"></div><div class="P33"></div><div class="P34"></div><div class="P35"></div><div class="P36"></div><div class="P37"></div><div class="P38"></div>
+                        </div>
+
+                        <div class="view_content mount mount-re">
+                            <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div><div class="P17"></div><div class="P18"></div><div class="P19"></div><div class="P20"></div><div class="P21"></div><div class="P22"></div><div class="P23"></div><div class="P24"></div><div class="P25"></div><div class="P26"></div><div class="P27"></div><div class="P28"></div><div class="P29"></div><div class="P30"></div><div class="P31"></div><div class="P32"></div><div class="P33"></div><div class="P34"></div><div class="P35"></div><div class="P36"></div><div class="P37"></div><div class="P38"></div>
+                        </div>
+
+
+                        <div class="view_content mount mount-min">
+                            <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div><div class="P17"></div><div class="P18"></div><div class="P19"></div><div class="P20"></div><div class="P21"></div><div class="P22"></div><div class="P23"></div><div class="P24"></div><div class="P25"></div><div class="P26"></div><div class="P27"></div><div class="P28"></div><div class="P29"></div><div class="P30"></div><div class="P31"></div><div class="P32"></div><div class="P33"></div><div class="P34"></div><div class="P35"></div><div class="P36"></div><div class="P37"></div><div class="P38"></div>
+                        </div>
+                        <div class="view_content cloud">
+                            <div class="cloud_left">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_right">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div>
+                            </div>
+                        </div>
+                        <div class="view_content cloud cloud-re">
+                            <div class="cloud_left">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_right">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div>
+                            </div>
+                        </div>
+                        <div class="view_content cloud cloud-big">
+                            <div class="cloud_left">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_right">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div>
+                            </div>
+                        </div>
+                        <div class="view_content cloud grass">
+                            <div class="cloud_left">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_right">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div>
+                            </div>
+                        </div>
+                        <div class="view_content cloud grass grass-re">
+                            <div class="cloud_left">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_right">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div>
+                            </div>
+                        </div>
+                        <div class="view_content cloud grass grass-big">
+                            <div class="cloud_left">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_right">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stage__view view-stp">
+                        <div class="view_content mount">
+                            <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div><div class="P17"></div><div class="P18"></div><div class="P19"></div><div class="P20"></div><div class="P21"></div><div class="P22"></div><div class="P23"></div><div class="P24"></div><div class="P25"></div><div class="P26"></div><div class="P27"></div><div class="P28"></div><div class="P29"></div><div class="P30"></div><div class="P31"></div><div class="P32"></div><div class="P33"></div><div class="P34"></div><div class="P35"></div><div class="P36"></div><div class="P37"></div><div class="P38"></div>
+                        </div>
+                        <div class="view_content mount mount-re">
+                            <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div><div class="P17"></div><div class="P18"></div><div class="P19"></div><div class="P20"></div><div class="P21"></div><div class="P22"></div><div class="P23"></div><div class="P24"></div><div class="P25"></div><div class="P26"></div><div class="P27"></div><div class="P28"></div><div class="P29"></div><div class="P30"></div><div class="P31"></div><div class="P32"></div><div class="P33"></div><div class="P34"></div><div class="P35"></div><div class="P36"></div><div class="P37"></div><div class="P38"></div>
+                        </div>
+                        <div class="view_content mount mount-min">
+                            <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div><div class="P17"></div><div class="P18"></div><div class="P19"></div><div class="P20"></div><div class="P21"></div><div class="P22"></div><div class="P23"></div><div class="P24"></div><div class="P25"></div><div class="P26"></div><div class="P27"></div><div class="P28"></div><div class="P29"></div><div class="P30"></div><div class="P31"></div><div class="P32"></div><div class="P33"></div><div class="P34"></div><div class="P35"></div><div class="P36"></div><div class="P37"></div><div class="P38"></div>
+                        </div>
+                        <div class="view_content cloud">
+                            <div class="cloud_left">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_right">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div>
+                            </div>
+                        </div>
+                        <div class="view_content cloud cloud-re">
+                            <div class="cloud_left">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_right">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div>
+                            </div>
+                        </div>
+                        <div class="view_content cloud cloud-big">
+                            <div class="cloud_left">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_right">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div>
+                            </div>
+                        </div>
+                        <div class="view_content cloud grass">
+                            <div class="cloud_left">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_right">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div>
+                            </div>
+                        </div>
+                        <div class="view_content cloud grass grass-re">
+                            <div class="cloud_left">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_right">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div>
+                            </div>
+                        </div>
+                        <div class="view_content cloud grass grass-big">
+                            <div class="cloud_left">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_main">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                            </div>
+                            <div class="cloud_right">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- display__goal -->
+                    <div class="display--goal--door">
+                        <div class="doorcover">
+                            <div class="doorcover__parts1"></div>
+                            <div class="doorcover__parts2"></div>
+                        </div>
+                        <div class="door__wrapper">
+                            <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                            <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                            <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                            <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                            <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                            <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                            <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                            <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                        </div>
+                    </div>
+                    <div class="display--goal">
+                        <div class="castle">
+                            <div class="cs_window"></div>
+                            <div class="cs_exit"><div class="cs_exitInner"></div></div>
+                            <div class="castle_top">
+                                <div class="castle_tp_topHead">
+                                    <div class="cs_block"></div>
+                                    <div class="cs_block"></div>
+                                    <div class="cs_block"></div>
+                                    <div class="cs_block"></div>
+                                </div>
+                                <div class="castle_topBody">
+                                    <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-3"><div class="renga"></div><div class="renga"></div></div>
+                                </div>
+                            </div>
+                            
+                            <div class="castle_under">
+                                <div class="castle_topBody">
+                                    <div class="renga-5"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-5"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-5"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-5"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-5"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-5"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-5"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-5"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-5"><div class="renga"></div><div class="renga"></div></div>
+                                    <div class="renga-5"><div class="renga"></div><div class="renga"></div></div>
+                                </div>
+                            </div>
+
+                            <div class="castle_un_topHead">
+                                <div class="cs_block"></div>
+                                <div class="cs_block"></div>
+                                <div class="cs_block"></div>
+                                <div class="cs_block"></div>
+                                <div class="cs_block"></div>
+                                <div class="cs_block"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- kinokoBlock -->
+                    <div class="kinokoBlock">
+                        <div class="kinoko">
+                            <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                        </div>
+                        <div class="block">
+                            <div class="P01"></div><div class="P02"></div><div class="P03"></div><div class="P04"></div><div class="P05"></div><div class="P06"></div><div class="P07"></div><div class="P08"></div><div class="P09"></div><div class="P10"></div><div class="P11"></div><div class="P12"></div><div class="P13"></div><div class="P14"></div><div class="P15"></div><div class="P16"></div>
+                        </div>
+                    </div>
+                    <!-- base -->
+                    <div class="baseBox">
+                        <div class="base base-mov">
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                        </div>
+                        <div class="base base-crs">
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                            <div class="baseBlock">
+                                <div class="baseBlock__parts--1"></div>
+                                <div class="baseBlock__parts--2"></div>
+                                <div class="baseBlock__parts--3"></div>
+                                <div class="baseBlock__parts--4"></div>
+                                <div class="baseBlock__parts--5"></div>
+                                <div class="baseBlock__parts--6"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mario -->
+                    <!-- MRO -->
+                    <div class="MROBOX">
+                        <div class="MROBOX__WrapMRO">
+                            <!-- MRO run -->
+                            <div class="MRwrapper">
+                                <div class="MRbox">
+                                    <div class="MRO MRrun">
+                                        <div class="MRO_fce">
+                                            <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                            <div class="P04"></div><div class="P05"></div>
+                                        </div>
+                                        <div class="MRO_bdy">
+                                            <div class="MRO_bdy-set">
+                                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                                <div class="P07"></div><div class="P08"></div>
+                                            </div>
+                                            <div class="MRO_bdy-stn">
+                                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                                <div class="P07"></div><div class="P08"></div>
+                                            </div>
+                                            <div class="MRO_bdy-hop">
+                                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                                <div class="P04"></div><div class="P05"></div>
+                                            </div>
+                                            <div class="MRO_bdy-stp">
+                                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                                <div class="P07"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- MRO jump -->
+                            <div class="MRO MRjmp MRjmp--ATC">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                            </div>
+                            <!-- MRO jump -->
+                            <div class="MRO MRjmp MRjmp--NML">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                            </div>
+                            <!-- MRO jump -->
+                            <div class="MRO MRjmp MRjmp--BGM">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                            </div>
+                            <!-- MRO crush -->
+                            <div class="MRO MRcrs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                            </div>
+                        </div>
+                        <div class="MROBOX__WrapBGM">
+                            <!-- BMR run -->
+                            <div class="BMwrapper">
+                                <div class="BMR BMrun">
+                                    <div class="BMR_fce">
+                                        <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                        <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                        <div class="P07"></div><div class="P08"></div>
+                                    </div>
+                                    <div class="BMR_bdy">
+                                        <div class="BMR_bdy-set">
+                                            <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                            <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                            <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                        </div>
+                                        <div class="BMR_bdy-stn">
+                                            <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                            <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                            <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                            <div class="P10"></div>
+                                        </div>
+                                        <div class="BMR_bdy-stp">
+                                            <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                            <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                            <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                            <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                            <div class="P13"></div>
+                                        </div>
+                                        <div class="BMR_bdy-hop">
+                                            <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                            <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                            <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                            <div class="P10"></div><div class="P11"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- BMR jump -->
+                            <div class="BMR BMjmp">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                            </div>
+                            <!-- BMR crush -->
+                            <!-- <div class="BMR BMcrs"></div> -->
+                            <!-- BMR grow -->
+                            <div class="BMR BMgrw BMgrw--up">
+                                <div class="BMgrw_wrapper">
+                                    <div class="BMgrw_small">
+                                        <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                        <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                        <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                        <div class="P10"></div><div class="P11"></div>
+                                    </div>
+                                    <div class="BMgrw_middle">
+                                        <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                        <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                        <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                        <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                        <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                        <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    </div>
+                                    <div class="BMgrw_big">
+                                        <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                        <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                        <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                        <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                        <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                        <div class="P16"></div><div class="P17"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="BMR BMgrw BMgrw--dn">
+                                <div class="BMgrw_wrapper">
+                                    <div class="BMgrw_small">
+                                        <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                        <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                        <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                        <div class="P10"></div><div class="P11"></div>
+                                    </div>
+                                    <div class="BMgrw_middle">
+                                        <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                        <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                        <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                        <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                        <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                        <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    </div>
+                                    <div class="BMgrw_big">
+                                        <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                        <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                        <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                        <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                        <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                        <div class="P16"></div><div class="P17"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- char -->
+                    <div class="charaBox  charaBox--nml charaBox--01">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--02">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--03">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--04">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--05">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--06">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--07">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--08">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--09">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--10">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--11">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--12">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--13">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--14">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--15">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox  charaBox--nml charaBox--16">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="charaBox charaBox--prw charaBox--05">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox charaBox--prw charaBox--06">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox charaBox--prw charaBox--07">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox charaBox--prw charaBox--08">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox charaBox--prw charaBox--09">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox charaBox--prw charaBox--10">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox charaBox--prw charaBox--11">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox charaBox--prw charaBox--12">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox charaBox--prw charaBox--13">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox charaBox--prw charaBox--14">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox charaBox--prw charaBox--15">
+                        <div class="charactor chara--nk nokonoko">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                <div class="P16"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                    <div class="P10"></div><div class="P11"></div><div class="P12"></div>
+                                    <div class="P13"></div><div class="P14"></div><div class="P15"></div>
+                                    <div class="P16"></div><div class="P17"></div><div class="P18"></div>
+                                    <div class="P19"></div><div class="P20"></div><div class="P21"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charaBox charaBox--prw charaBox--16">
+                        <div class="charactor chara--kb kuribo">
+                            <div class="chara chara--crs">
+                                <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                            </div>
+                            <div class="chara--run">
+                                <div class="chara chara--hop">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                                <div class="chara chara--stp">
+                                    <div class="P01"></div><div class="P02"></div><div class="P03"></div>
+                                    <div class="P04"></div><div class="P05"></div><div class="P06"></div>
+                                    <div class="P07"></div><div class="P08"></div><div class="P09"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
